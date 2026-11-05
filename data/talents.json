@@ -1,0 +1,33 @@
+[
+  { "id": "warrior", "name": "Warrior", "nodes": [
+    { "id": "w_vigor",    "name": "Vigor",         "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "heroStat", "stat": "hp", "pct": 4 } ] },
+    { "id": "w_strike",   "name": "Strike",        "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "heroStat", "stat": "atk", "pct": 3 } ] },
+    { "id": "w_bulwark",  "name": "Bulwark",       "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "classDef", "class": "infantry", "pct": 4 } ] },
+    { "id": "w_lancers",  "name": "Lancers",       "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "classAtk", "class": "cavalry", "pct": 4 } ] },
+    { "id": "w_rank2",    "name": "Master of Arms","tier": 3, "requires": { "points": 6, "nodes": ["w_strike"] },"maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "w_ironwill", "name": "Iron Will",     "tier": 3, "requires": { "points": 6 },                      "maxRank": 2, "effects": [ { "kind": "woundedRatio", "pct": 3 } ] },
+    { "id": "w_rank3",    "name": "Legend",        "tier": 4, "requires": { "points": 10, "nodes": ["w_rank2"] },"maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "w_warlord",  "name": "Warlord",       "tier": 4, "requires": { "points": 10 },                     "maxRank": 2, "effects": [ { "kind": "heroStat", "stat": "lead", "pct": 5 } ] }
+  ] },
+  { "id": "ranger", "name": "Ranger", "nodes": [
+    { "id": "r_aim",      "name": "Steady Aim",    "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "classAtk", "class": "archer", "pct": 3 } ] },
+    { "id": "r_forage",   "name": "Forager",       "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "heroStat", "stat": "gather", "pct": 5 } ] },
+    { "id": "r_pathfind", "name": "Pathfinder",    "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "marchSpeed", "pct": 4 } ] },
+    { "id": "r_eagle",    "name": "Eagle Eye",     "tier": 2, "requires": { "points": 3 },                      "maxRank": 1, "effects": [ { "kind": "visionRadius", "amount": 1 } ] },
+    { "id": "r_rank2",    "name": "Deadeye",       "tier": 3, "requires": { "points": 6, "nodes": ["r_aim"] },   "maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "r_fleet",    "name": "Fleet Footed",  "tier": 3, "requires": { "points": 6 },                      "maxRank": 2, "effects": [ { "kind": "marchSpeed", "pct": 5 } ] },
+    { "id": "r_rank3",    "name": "Storm of Arrows","tier": 4,"requires": { "points": 10, "nodes": ["r_rank2"] },"maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "r_hunter",   "name": "Master Hunter", "tier": 4, "requires": { "points": 10 },                     "maxRank": 2, "effects": [ { "kind": "heroStat", "stat": "atk", "pct": 4 }, { "kind": "heroStat", "stat": "gather", "pct": 5 } ] }
+  ] },
+  { "id": "strategist", "name": "Strategist", "nodes": [
+    { "id": "s_tactics",  "name": "Tactics",       "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "rageGain", "pct": 5 } ] },
+    { "id": "s_logistics","name": "Logistics",     "tier": 1, "requires": {},                                   "maxRank": 3, "effects": [ { "kind": "heroStat", "stat": "lead", "pct": 4 } ] },
+    { "id": "s_drill",    "name": "Drillmaster",   "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "trainTime", "pct": -4 } ] },
+    { "id": "s_steward",  "name": "Steward",       "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "upkeepMult", "pct": -3 } ] },
+    { "id": "s_architect", "name": "Architect",     "tier": 2, "requires": { "points": 3 },                      "maxRank": 2, "effects": [ { "kind": "buildSpeed", "pct": 3 } ] },
+    { "id": "s_rank2",    "name": "Grand Strategy","tier": 3, "requires": { "points": 6, "nodes": ["s_tactics"] },"maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "s_medic",    "name": "Field Medic",   "tier": 3, "requires": { "points": 6 },                      "maxRank": 2, "effects": [ { "kind": "woundedRatio", "pct": 4 } ] },
+    { "id": "s_rank3",    "name": "Mastermind",    "tier": 4, "requires": { "points": 10, "nodes": ["s_rank2"] },"maxRank": 1, "effects": [ { "kind": "skillRank", "amount": 1 } ] },
+    { "id": "s_quartermaster","name": "Quartermaster","tier": 4,"requires": { "points": 10 },                    "maxRank": 2, "effects": [ { "kind": "capMult", "res": "all", "pct": 5 } ] }
+  ] }
+]

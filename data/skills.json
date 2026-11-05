@@ -1,0 +1,8 @@
+[
+  { "id": "cleave", "name": "Flurry of Pecks", "rage": 100, "effect": [ { "kind": "damageLargestStack", "mult": 3.0 } ] },
+  { "id": "rally_cry", "name": "Mighty Cluck", "rage": 100, "effect": [ { "kind": "buffAtk", "pct": 25, "rounds": 3 } ] },
+  { "id": "volley", "name": "Egg Barrage", "rage": 100, "effect": [ { "kind": "damageClass", "class": "archer", "mult": 2.5 } ] },
+  { "id": "shield_wall", "name": "Fluff Wall", "rage": 100, "effect": [ { "kind": "damageTaken", "pct": -30, "rounds": 3 } ] },
+  { "id": "charge", "name": "Feathered Charge", "rage": 100, "effect": [ { "kind": "buffClassAtk", "class": "cavalry", "pct": 40, "rounds": 2 } ] },
+  { "id": "mend", "name": "Mother Hen", "rage": 100, "effect": [ { "kind": "woundedShare", "pct": 40 } ] }
+]

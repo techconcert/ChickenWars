@@ -1,0 +1,68 @@
+{
+  "nodeTypes": [
+    { "id": "forest",   "resource": "wood",  "biomes": ["forest","meadow"],    "amountByTier": [2000,3500,5500,8000,11000,15000], "respawnTicks": 1200 },
+    { "id": "farmland", "resource": "food",  "biomes": ["meadow","beach"],     "amountByTier": [2000,3500,5500,8000,11000,15000], "respawnTicks": 1200 },
+    { "id": "quarry",   "resource": "stone", "biomes": ["highland","forest"],  "amountByTier": [1500,2800,4500,6500,9000,12500],  "respawnTicks": 1500 },
+    { "id": "goldvein", "resource": "gold",  "biomes": ["highland","snow"],    "amountByTier": [800,1500,2600,4000,6000,8500],    "respawnTicks": 1800 },
+    { "id": "emberseam","resource": "ember", "biomes": ["highland","snow"],    "amountByTier": [0,0,40,80,140,220],               "respawnTicks": 3600, "minTier": 3 }
+  ],
+  "poiTypes": [
+    { "id": "bandit_camp", "countPerRegionByTier": [2,3,3,4,4,5] },
+    { "id": "lair",        "countPerRegionByTier": [0,1,1,1,2,2] },
+    { "id": "boss",        "countPerRegionByTier": [0,1,1,1,1,1], "homeBoss": false },
+    { "id": "ruin",        "countPerRegionByTier": [1,1,1,1,1,1] },
+    { "id": "village",     "countPerRegionByTier": [1,1,1,1,1,0] },
+    { "id": "shrine",      "countPerRegionByTier": [0,1,0,1,0,1] },
+    { "id": "cache",       "countPerRegionByTier": [1,2,2,2,2,2] }
+  ],
+  "banditCamps": [
+    { "tier": 1, "troops": [{ "troop": "h_farmer", "count": 20 }],                                             "baseStrength": 100,  "growthPerDay": 4,  "tierCap": 220,  "raidThreshold": 160 },
+    { "tier": 2, "troops": [{ "troop": "h_farmer", "count": 60 }, { "troop": "h_shotgun", "count": 30 }],         "baseStrength": 300,  "growthPerDay": 6, "tierCap": 420,  "raidThreshold": 360 },
+    { "tier": 3, "troops": [{ "troop": "h_animal_control", "count": 80 }, { "troop": "h_hunter", "count": 50 }],      "baseStrength": 900,  "growthPerDay": 14, "tierCap": 1250, "raidThreshold": 1050 },
+    { "tier": 4, "troops": [{ "troop": "h_animal_control", "count": 150 }, { "troop": "h_pickup", "count": 60 }],       "baseStrength": 2200, "growthPerDay": 28, "tierCap": 3100, "raidThreshold": 2700 },
+    { "tier": 5, "troops": [{ "troop": "h_riot", "count": 200 }, { "troop": "h_sniper", "count": 100 }], "baseStrength": 6000, "growthPerDay": 56, "tierCap": 7800, "raidThreshold": 7000 }
+  ],
+  "regionTiers": [
+    { "tier": 1, "name": "Home Meadow",   "unlockCityLevel": 1, "cityLevelRange": [1,4],   "nodeDensity": 1.0 },
+    { "tier": 2, "name": "Barnyard Fields", "unlockCityLevel": 2, "cityLevelRange": [3,7],   "nodeDensity": 1.0 },
+    { "tier": 3, "name": "Feedlot Flats", "unlockCityLevel": 5, "cityLevelRange": [6,11],  "nodeDensity": 1.1 },
+    { "tier": 4, "name": "The Suburbs",  "unlockCityLevel": 9, "cityLevelRange": [10,16], "nodeDensity": 1.1 },
+    { "tier": 5, "name": "Industrial Zone",   "unlockCityLevel": 14, "cityLevelRange": [15,21], "nodeDensity": 1.2 },
+    { "tier": 6, "name": "Downtown", "unlockCityLevel": 19, "cityLevelRange": [20,25], "nodeDensity": 1.2 }
+  ],
+  "bosses": [
+    { "tier": 2, "id": "boss_warchief", "name": "Farmer McGruff",  "heroLevel": 8, "troops": [{ "troop": "h_farmer", "count": 100 }, { "troop": "h_shotgun", "count": 50 }] },
+    { "tier": 3, "id": "boss_stonewyrm", "name": "The Combine Harvester",   "heroLevel": 18, "troops": [{ "troop": "h_riot", "count": 300 }] },
+    { "tier": 4, "id": "boss_frostqueen", "name": "The Mayor",    "heroLevel": 26, "troops": [{ "troop": "h_sniper", "count": 350 }, { "troop": "h_humvee", "count": 150 }] },
+    { "tier": 5, "id": "boss_ashlord", "name": "The Fast-Food Tycoon",          "heroLevel": 33, "troops": [{ "troop": "h_riot", "count": 500 }, { "troop": "h_humvee", "count": 250 }] },
+    { "tier": 6, "id": "boss_crownking", "name": "The Colonel",  "heroLevel": 40, "troops": [{ "troop": "h_riot", "count": 700 }, { "troop": "h_sniper", "count": 400 }, { "troop": "h_humvee", "count": 300 }] }
+  ],
+  "events": [
+    { "id": "merchant", "title": "Travelling Egg Merchant", "text": "A plump hen with a cart of goods trundles up to the gate.", "weight": 3, "options": [ { "label": "Buy supplies", "effect": [ { "kind": "trade", "give": { "gold": 100 }, "get": { "wood": 300, "stone": 150 } } ] }, { "label": "Send away", "effect": [] } ] },
+    { "id": "wolves", "title": "Foxes at the Henhouse", "text": "Something is sniffing around the henhouse at night.", "weight": 2, "options": [ { "label": "Send a patrol of chicks", "effect": [ { "kind": "spawnCamp", "tier": 1 } ] }, { "label": "Wait it out", "effect": [ { "kind": "blockNode", "type": "forest", "ticks": 1800 } ] } ] },
+    { "id": "harvest", "title": "Harvest Festival", "text": "The corn is high and the whole flock is in a party mood.", "weight": 2, "season": "autumn", "options": [ { "label": "Celebrate", "effect": [ { "kind": "buff", "stat": "gatherMult", "pct": 25, "ticks": 1800 } ] } ] },
+    {
+      "id": "caravan",
+      "title": "Egg Cart to Escort", "text": "A cart of eggs needs an escort through human country.",
+      "weight": 2,
+      "options": [
+        { "label": "Hire a pig escort (guaranteed)", "effect": [ { "kind": "trade", "give": { "gold": 60, "food": 100 }, "get": { "gold": 220, "stone": 120 } } ] },
+        { "label": "Send a few scouts (risky)", "effect": [ { "kind": "gamble", "chance": 55, "win": { "gold": 380, "wood": 200 }, "lose": { "gold": 50 } } ] },
+        { "label": "Let them pass", "effect": [] }
+      ]
+    },
+    { "id": "plague", "title": "Fowl Pox in the Flock", "text": "A nasty sniffle is spreading through the roosts.", "weight": 1, "season": "winter", "options": [ { "label": "Pay for healers", "effect": [ { "kind": "cost", "gold": 100 } ] }, { "label": "Endure", "effect": [ { "kind": "buff", "stat": "healMult", "pct": -50, "ticks": 3600 } ] } ] }
+  ],
+  "lootTables": [
+    { "tier": 1, "resources": { "food": [40,80], "wood": [40,80], "gold": [10,30] },
+      "rare": [ { "kind": "none", "weight": 70, "bias": 0 }, { "kind": "resource", "res": "gold", "amount": [50,100], "weight": 20, "bias": 1 }, { "kind": "item", "rarity": "common", "weight": 10, "bias": 1 } ] },
+    { "tier": 2, "resources": { "food": [100,200], "wood": [100,200], "stone": [40,90], "gold": [30,70] },
+      "rare": [ { "kind": "none", "weight": 60, "bias": 0 }, { "kind": "resource", "res": "gold", "amount": [100,220], "weight": 22, "bias": 1 }, { "kind": "item", "rarity": "common", "weight": 12, "bias": 0.5 }, { "kind": "item", "rarity": "uncommon", "weight": 6, "bias": 2 } ] },
+    { "tier": 3, "resources": { "food": [250,450], "wood": [250,450], "stone": [120,240], "gold": [80,160] },
+      "rare": [ { "kind": "none", "weight": 50, "bias": 0 }, { "kind": "resource", "res": "gold", "amount": [250,500], "weight": 22, "bias": 1 }, { "kind": "resource", "res": "ember", "amount": [2,5], "weight": 8, "bias": 2 }, { "kind": "item", "rarity": "uncommon", "weight": 14, "bias": 1 }, { "kind": "item", "rarity": "rare", "weight": 6, "bias": 2.5 } ] },
+    { "tier": 4, "resources": { "food": [600,1000], "wood": [600,1000], "stone": [300,550], "gold": [200,400] },
+      "rare": [ { "kind": "none", "weight": 40, "bias": 0 }, { "kind": "resource", "res": "gold", "amount": [600,1200], "weight": 20, "bias": 1 }, { "kind": "resource", "res": "ember", "amount": [5,12], "weight": 14, "bias": 2 }, { "kind": "item", "rarity": "rare", "weight": 18, "bias": 2 }, { "kind": "item", "rarity": "epic", "weight": 8, "bias": 3 } ] },
+    { "tier": 5, "resources": { "food": [1400,2200], "wood": [1400,2200], "stone": [700,1200], "gold": [500,900] },
+      "rare": [ { "kind": "none", "weight": 30, "bias": 0 }, { "kind": "resource", "res": "gold", "amount": [1500,2800], "weight": 18, "bias": 1 }, { "kind": "resource", "res": "ember", "amount": [12,28], "weight": 20, "bias": 2 }, { "kind": "item", "rarity": "rare", "weight": 20, "bias": 2 }, { "kind": "item", "rarity": "epic", "weight": 12, "bias": 3 } ] }
+  ]
+}

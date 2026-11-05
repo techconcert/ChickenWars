@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }]
+  },
+  "overrides": [
+    {
+      "files": ["src/sim/**/*.ts"],
+      "rules": {
+        "no-restricted-globals": ["error", "window", "document", "performance", "localStorage"],
+        "no-restricted-properties": [
+          "error",
+          { "object": "Math", "property": "random", "message": "Use the seeded RNG in sim/rng.ts" },
+          { "object": "Date", "property": "now", "message": "Sim time is ticks, never wall clock" }
+        ],
+        "no-restricted-imports": ["error", { "patterns": ["three", "three/*", "@render/*", "@ui/*", "preact*"] }]
+      }
+    },
+    {
+      "files": ["src/gen/**/*.ts"],
+      "rules": {
+        "no-restricted-properties": [
+          "error",
+          { "object": "Math", "property": "random", "message": "gen must be seeded; use a hash/PRNG from the seed" },
+          { "object": "Date", "property": "now", "message": "gen must be deterministic; no wall clock" }
+        ]
+      }
+    }
+  ]
+}

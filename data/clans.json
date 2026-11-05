@@ -1,0 +1,6 @@
+[
+  { "id": "oakwarden", "name": "Silkie Flock", "banner": "#4c8a3e", "effects": [ { "kind": "prodMult", "res": "wood", "pct": 15 }, { "kind": "adjacency", "building": "lumber_camp", "pct": 10 }, { "kind": "classDef", "class": "infantry", "pct": 5 } ] },
+  { "id": "stonekin", "name": "Orpington Flock", "banner": "#8f8d89", "effects": [ { "kind": "prodMult", "res": "stone", "pct": 15 }, { "kind": "prodMult", "res": "gold", "pct": 15 }, { "kind": "buildingHp", "category": "defence", "pct": 20 }, { "kind": "costMult", "troopClass": "siege", "pct": -10 } ] },
+  { "id": "riverfolk", "name": "Wyandotte Flock", "banner": "#3c6ea8", "effects": [ { "kind": "prodMult", "res": "food", "pct": 15 }, { "kind": "marchSpeed", "pct": 10 }, { "kind": "tradeStep", "steps": 1 } ] },
+  { "id": "ironvale", "name": "Rhode Island Flock", "banner": "#a83c3c", "effects": [ { "kind": "trainTime", "pct": -10 }, { "kind": "heroStartLevel", "amount": 1 }, { "kind": "upkeepMult", "pct": 5 } ] }
+]

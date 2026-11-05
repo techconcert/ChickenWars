@@ -1,0 +1,40 @@
+{
+  "name": "chickenwars",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Single-player 4X, cel-shaded isometric 3D, procedural assets.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests tools --ext .ts,.tsx",
+    "validate": "tsx tools/validate-data.ts",
+    "balance": "tsx tools/balance-sim.ts",
+    "bench": "tsx tools/bench-sim.ts",
+    "shot": "tsx tools/screenshot.ts"
+  },
+  "dependencies": {
+    "preact": "10.24.3",
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/three": "0.160.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.1",
+    "playwright-core": "^1.48.2",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.5",
+    "zod": "3.23.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

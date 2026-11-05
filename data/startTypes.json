@@ -1,0 +1,5 @@
+[
+  { "id": "river_valley", "name": "Creek Meadow", "terrain": { "river": true, "snowBaseline": 0.0, "islands": 1 }, "season": { "springDays": 20, "summerDays": 20, "autumnDays": 20, "winterDays": 20 }, "start": { "resources": { "food": 600, "wood": 600, "stone": 300, "gold": 150 } } },
+  { "id": "frozen_north", "name": "Frosty Pasture", "terrain": { "river": false, "snowBaseline": 0.5, "islands": 1 }, "season": { "springDays": 15, "summerDays": 10, "autumnDays": 15, "winterDays": 40 }, "start": { "resources": { "food": 500, "wood": 500, "stone": 450, "gold": 150 } } },
+  { "id": "islands", "name": "Pond Islands", "terrain": { "river": false, "snowBaseline": 0.0, "islands": 4 }, "season": { "springDays": 20, "summerDays": 20, "autumnDays": 20, "winterDays": 20 }, "start": { "resources": { "food": 600, "wood": 700, "stone": 250, "gold": 150 } } }
+]

@@ -1,0 +1,18 @@
+[
+  { "id": "common_sword",     "name": "Worn Spur",       "slot": "weapon",  "rarity": "common",   "stats": { "atk": 3 },                         "source": ["camp", "quest"] },
+  { "id": "uncommon_blade",   "name": "Keen Spur",       "slot": "weapon",  "rarity": "uncommon", "stats": { "atk": 6 },                         "source": ["camp", "lair"] },
+  { "id": "rare_warblade",    "name": "War Spur",         "slot": "weapon",  "rarity": "rare",     "stats": { "atk": 10, "lead": 3 },             "source": ["lair", "boss"] },
+  { "id": "epic_emberbrand",  "name": "Chili Spur",       "slot": "weapon",  "rarity": "epic",     "stats": { "atk": 15, "lead": 6 },             "source": ["boss"] },
+  { "id": "common_jerkin",    "name": "Feather Vest",   "slot": "armour",  "rarity": "common",   "stats": { "def": 3 },                         "source": ["camp", "quest"] },
+  { "id": "uncommon_mail",    "name": "Tin Foil Vest",        "slot": "armour",  "rarity": "uncommon", "stats": { "def": 6, "hp": 3 },                "source": ["camp", "lair"] },
+  { "id": "rare_plate",       "name": "Colander Plate",    "slot": "armour",  "rarity": "rare",     "stats": { "def": 10, "hp": 6 },               "source": ["lair", "boss"] },
+  { "id": "epic_aegis",       "name": "Frying Pan Aegis",     "slot": "armour",  "rarity": "epic",     "stats": { "def": 15, "hp": 10 },              "source": ["boss"] },
+  { "id": "common_pennant",   "name": "Feather Pennant",    "slot": "banner",  "rarity": "common",   "stats": { "lead": 3 },                        "source": ["camp", "quest"] },
+  { "id": "uncommon_standard","name": "Barnyard Standard",   "slot": "banner",  "rarity": "uncommon", "stats": { "lead": 6, "def": 2 },              "source": ["camp", "lair"] },
+  { "id": "rare_banner",      "name": "Banner of the Coop", "slot": "banner", "rarity": "rare",   "stats": { "lead": 10, "atk": 3 },             "source": ["lair", "boss"] },
+  { "id": "epic_crownstandard","name": "Golden Comb Standard",  "slot": "banner",  "rarity": "epic",     "stats": { "lead": 15, "atk": 5, "def": 5 },   "source": ["boss"] },
+  { "id": "common_charm",     "name": "Lucky Eggshell",       "slot": "trinket", "rarity": "common",   "stats": { "gather": 3 },                      "source": ["camp", "quest"] },
+  { "id": "uncommon_compass", "name": "Brass Weathervane",    "slot": "trinket", "rarity": "uncommon", "stats": { "gather": 6, "lead": 2 },           "source": ["camp", "lair"] },
+  { "id": "rare_signet",      "name": "Rooster Signet",  "slot": "trinket", "rarity": "rare",     "stats": { "gather": 8, "hp": 6 },             "source": ["lair", "boss"] },
+  { "id": "epic_heartstone",  "name": "Golden Egg",       "slot": "trinket", "rarity": "epic",     "stats": { "gather": 12, "hp": 10, "atk": 4 }, "source": ["boss", "quest"] }
+]

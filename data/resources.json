@@ -1,0 +1,7 @@
+[
+  { "id": "food",  "name": "Feed",  "color": "#c9a24a", "icon": "wheat", "startAmount": 600, "baseCap": 1000 },
+  { "id": "wood",  "name": "Twigs",  "color": "#7a5538", "icon": "log",   "startAmount": 600, "baseCap": 1000 },
+  { "id": "stone", "name": "Pebbles", "color": "#8f8d89", "icon": "rock",  "startAmount": 300, "baseCap": 1000 },
+  { "id": "gold",  "name": "Golden Eggs",  "color": "#e3b341", "icon": "coin",  "startAmount": 150, "baseCap": 1000 },
+  { "id": "ember", "name": "Chili Peppers", "color": "#d9553a", "icon": "flame", "startAmount": 0,   "baseCap": 100 }
+]

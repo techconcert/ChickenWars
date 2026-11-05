@@ -1,0 +1,17 @@
+[
+  { "id": "aldric", "name": "Colonel Clucksworth", "class": "warrior", "skill": "cleave", "recruit": { "kind": "start" },
+    "baseStats": { "atk": 20, "def": 18, "hp": 200, "lead": 120, "gather": 0.0 }, "growth": { "atk": 1.8, "def": 1.5, "hp": 14, "lead": 12, "gather": 0.0 } },
+  { "id": "mira", "name": "Henrietta Hawkeye", "class": "ranger", "skill": "volley", "recruit": { "kind": "tavern", "cost": { "gold": 200 } },
+    "baseStats": { "atk": 22, "def": 12, "hp": 150, "lead": 100, "gather": 0.05 }, "growth": { "atk": 2.0, "def": 1.0, "hp": 10, "lead": 10, "gather": 0.005 } },
+  { "id": "bran", "name": "Bantam Bran", "class": "warrior", "skill": "shield_wall", "recruit": { "kind": "tavern", "cost": { "gold": 250 } },
+    "baseStats": { "atk": 14, "def": 26, "hp": 240, "lead": 130, "gather": 0.0 }, "growth": { "atk": 1.2, "def": 2.0, "hp": 16, "lead": 12, "gather": 0.0 } },
+  { "id": "seren", "name": "Seren the Silkie", "class": "strategist", "skill": "rally_cry", "recruit": { "kind": "quest", "quest": "tutorial_ruins" },
+    "baseStats": { "atk": 15, "def": 14, "hp": 160, "lead": 110, "gather": 0.1 }, "growth": { "atk": 1.4, "def": 1.2, "hp": 11, "lead": 12, "gather": 0.01 } },
+  { "id": "kael", "name": "Kael Talons", "class": "warrior", "skill": "charge", "recruit": { "kind": "tavern", "cost": { "gold": 400 } },
+    "baseStats": { "atk": 24, "def": 16, "hp": 190, "lead": 110, "gather": 0.0 }, "growth": { "atk": 2.1, "def": 1.3, "hp": 13, "lead": 10, "gather": 0.0 } },
+  { "id": "ysolde", "name": "Ysolde Yolk", "class": "strategist", "skill": "mend", "recruit": { "kind": "poi", "poi": "shrine" },
+    "baseStats": { "atk": 12, "def": 16, "hp": 170, "lead": 100, "gather": 0.08 }, "growth": { "atk": 1.0, "def": 1.4, "hp": 12, "lead": 10, "gather": 0.01 } },
+  {"id": "edda", "name": "Edda Eggshell", "class": "strategist", "skill": "shield_wall", "recruit": {"kind": "ally", "lord": "lord_hale"}, "baseStats": {"atk": 16, "def": 22, "hp": 210, "lead": 120, "gather": 0.05}, "growth": {"atk": 1.3, "def": 1.8, "hp": 14, "lead": 12, "gather": 0.005}},
+  {"id": "torvald", "name": "Torvald Ironbeak", "class": "warrior", "skill": "charge", "recruit": {"kind": "ally", "lord": "lord_varn"}, "baseStats": {"atk": 28, "def": 18, "hp": 230, "lead": 130, "gather": 0.0}, "growth": {"atk": 2.3, "def": 1.5, "hp": 15, "lead": 12, "gather": 0.0}},
+  {"id": "liora", "name": "Liora Lightfeather", "class": "ranger", "skill": "volley", "recruit": {"kind": "ally", "lord": "lady_ilse"}, "baseStats": {"atk": 26, "def": 14, "hp": 170, "lead": 110, "gather": 0.08}, "growth": {"atk": 2.2, "def": 1.1, "hp": 11, "lead": 10, "gather": 0.008}}
+]

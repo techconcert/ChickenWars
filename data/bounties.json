@@ -1,0 +1,1214 @@
+{
+ "slots": 3,
+ "lifeDays": 50,
+ "refillDays": 20,
+ "startAfter": "tutorial_gather",
+ "bands": [
+  {
+   "id": 1,
+   "name": "Coop",
+   "th": [
+    1,
+    2
+   ],
+   "count": 1.0,
+   "reward": 1.0,
+   "rarity": "common",
+   "opener": "A tiny coop asks for help."
+  },
+  {
+   "id": 2,
+   "name": "Brood",
+   "th": [
+    3,
+    4
+   ],
+   "count": 1.5,
+   "reward": 1.6,
+   "rarity": "common",
+   "opener": "The brood is growing and so is its appetite."
+  },
+  {
+   "id": 3,
+   "name": "Flock",
+   "th": [
+    5,
+    6
+   ],
+   "count": 2.0,
+   "reward": 2.6,
+   "rarity": "uncommon",
+   "opener": "A rooster crows the news of a new task."
+  },
+  {
+   "id": 4,
+   "name": "Roost",
+   "th": [
+    7,
+    9
+   ],
+   "count": 2.8,
+   "reward": 4.0,
+   "rarity": "uncommon",
+   "opener": "The roost council pins up a bounty."
+  },
+  {
+   "id": 5,
+   "name": "Barn",
+   "th": [
+    10,
+    12
+   ],
+   "count": 3.8,
+   "reward": 6.0,
+   "rarity": "rare",
+   "opener": "The barn boss sends a sealed request."
+  },
+  {
+   "id": 6,
+   "name": "Farmstead",
+   "th": [
+    13,
+    16
+   ],
+   "count": 5.0,
+   "reward": 9.0,
+   "rarity": "rare",
+   "opener": "The head hen has a pressing matter."
+  },
+  {
+   "id": 7,
+   "name": "Ranch",
+   "th": [
+    17,
+    20
+   ],
+   "count": 6.5,
+   "reward": 13.0,
+   "rarity": "epic",
+   "opener": "The war council of feathers demands results."
+  },
+  {
+   "id": 8,
+   "name": "Poultry Empire",
+   "th": [
+    21,
+    25
+   ],
+   "count": 8.0,
+   "reward": 19.0,
+   "rarity": "epic",
+   "opener": "Every farm animal watches what you do next."
+  }
+ ],
+ "variants": [
+  {
+   "id": "quick",
+   "count": 0.6,
+   "reward": 0.7,
+   "extras": false
+  },
+  {
+   "id": "steady",
+   "count": 1.0,
+   "reward": 1.0,
+   "extras": false
+  },
+  {
+   "id": "grand",
+   "count": 1.7,
+   "reward": 1.9,
+   "extras": true
+  }
+ ],
+ "templates": [
+  {
+   "id": "train_militia",
+   "step": {
+    "kind": "trained",
+    "troop": "militia"
+   },
+   "base": 8,
+   "value": 60,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.6,
+    "wood": 0.6
+   },
+   "titles": [
+    "Raise the Chicks",
+    "Pitchfork Drills",
+    "Muster the Brood"
+   ],
+   "text": "Train {n} Pitchfork Chicks for the coop watch.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_bowman",
+   "step": {
+    "kind": "trained",
+    "troop": "bowman"
+   },
+   "base": 8,
+   "value": 60,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Gather the Eggs",
+    "Slingers' Call",
+    "Egg Volley Practice"
+   ],
+   "text": "Train {n} Egg Slingers to hold the pickets.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_rider",
+   "step": {
+    "kind": "trained",
+    "troop": "rider"
+   },
+   "base": 8,
+   "value": 60,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Saddle Up the Piglets",
+    "The Piglet Muster",
+    "Oinks on the Ridge"
+   ],
+   "text": "Train {n} Piglet Riders to scout the lanes.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_footman",
+   "step": {
+    "kind": "trained",
+    "troop": "footman"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Spurs Up",
+    "Spur Soldiers Forward",
+    "The Feathered Line"
+   ],
+   "text": "Train {n} Spur Soldiers for the line.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_marksman",
+   "step": {
+    "kind": "trained",
+    "troop": "marksman"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Steady Aim",
+    "The Yolk Wager",
+    "Hawk Eyes"
+   ],
+   "text": "Train {n} Yolk Marksmen to thin the humans.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_knight",
+   "step": {
+    "kind": "trained",
+    "troop": "knight"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Tusks and Spurs",
+    "Charge of the Boar Knights",
+    "Bacon-Proof Cavalry"
+   ],
+   "text": "Train {n} Boar Knights for a hard charge.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_guardian",
+   "step": {
+    "kind": "trained",
+    "troop": "guardian"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    5,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Wall of Iron Roosters",
+    "Unbroken Ranks",
+    "Bastion Drill"
+   ],
+   "text": "Train {n} Iron Roosters to anchor the army.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_sharpshooter",
+   "step": {
+    "kind": "trained",
+    "troop": "sharpshooter"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    5,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Crosswind Shots",
+    "The Sniper's Oath",
+    "One Egg, One Foe"
+   ],
+   "text": "Train {n} Golden Egg Snipers.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_lancer",
+   "step": {
+    "kind": "trained",
+    "troop": "lancer"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    5,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Lance Practice",
+    "The Hog Lancers Ride",
+    "Thunder on the Pasture"
+   ],
+   "text": "Train {n} Hog Lancers.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_ram",
+   "step": {
+    "kind": "trained",
+    "troop": "ram"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    6,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Hay and Rope",
+    "Gate Rollers",
+    "Bale Crews"
+   ],
+   "text": "Build {n} Hay Bale Rollers for the next siege.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_catapult",
+   "step": {
+    "kind": "trained",
+    "troop": "catapult"
+   },
+   "base": 6,
+   "value": 60,
+   "bands": [
+    6,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Counterweights",
+    "The Egg Works",
+    "Hurl the Eggs"
+   ],
+   "text": "Build {n} Egg Catapults for the next siege.",
+   "scale": 0.9
+  },
+  {
+   "id": "train_any",
+   "step": {
+    "kind": "counter",
+    "key": "trained_total",
+    "delta": true
+   },
+   "base": 12,
+   "value": 70,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Fill the Roost",
+    "Every Spur Counts",
+    "A Standing Flock"
+   ],
+   "text": "Train {n} troops of any kind.",
+   "label": "Train {n} troops"
+  },
+  {
+   "id": "upgrade_farm",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_farm",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 1.0
+   },
+   "titles": [
+    "Richer Harvests",
+    "Plough and Scratch",
+    "Silos Overflowing"
+   ],
+   "text": "Upgrade corn fields {n} times to feed the growing flock.",
+   "scale": 0.3,
+   "label": "Upgrade corn field {n}x"
+  },
+  {
+   "id": "upgrade_lumber_camp",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_lumber_camp",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "wood": 1.0
+   },
+   "titles": [
+    "Sharper Beaks",
+    "Twig Song",
+    "Twig Boom"
+   ],
+   "text": "Upgrade twig yards {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade twig yard {n}x"
+  },
+  {
+   "id": "upgrade_quarry",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_quarry",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "stone": 1.0
+   },
+   "titles": [
+    "Deeper Pecks",
+    "Pebble Rhythm",
+    "Pebbles for Fences"
+   ],
+   "text": "Upgrade pebble pits {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade pebble pit {n}x"
+  },
+  {
+   "id": "upgrade_mine",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_mine",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "gold": 1.0
+   },
+   "titles": [
+    "Down the Burrow",
+    "Golden Fever",
+    "Rich Nests"
+   ],
+   "text": "Upgrade golden roosts {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade golden roost {n}x"
+  },
+  {
+   "id": "upgrade_storehouse",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_storehouse",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.3,
+    "wood": 0.3,
+    "stone": 0.3
+   },
+   "titles": [
+    "Room for More",
+    "Silo Shuffle",
+    "Mountains of Feed"
+   ],
+   "text": "Upgrade feed silos {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade feed silo {n}x"
+  },
+  {
+   "id": "upgrade_house",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_house",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.6,
+    "wood": 0.6
+   },
+   "titles": [
+    "Roofs Over Heads",
+    "Coop Rows",
+    "A Crowded Roost"
+   ],
+   "text": "Upgrade chicken coops {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade chicken coop {n}x"
+  },
+  {
+   "id": "upgrade_barracks",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_barracks",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Perches and Banners",
+    "Barracks Overhaul",
+    "The Drill Yard"
+   ],
+   "text": "Upgrade rooster barracks {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade rooster barracks {n}x"
+  },
+  {
+   "id": "upgrade_archery_range",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_archery_range",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Better Targets",
+    "Range Renovations",
+    "A Basket of Upgrades"
+   ],
+   "text": "Upgrade egg toss ranges {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade egg toss range {n}x"
+  },
+  {
+   "id": "upgrade_stable",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_stable",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Fresh Mud",
+    "Pig Hands",
+    "Fine Sties"
+   ],
+   "text": "Upgrade pigsties {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade pigsty {n}x"
+  },
+  {
+   "id": "upgrade_infirmary",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_infirmary",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Clean Straw",
+    "Healers' Ward",
+    "The Quiet Nests"
+   ],
+   "text": "Upgrade nursing nests {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade nursing nest {n}x"
+  },
+  {
+   "id": "upgrade_watchtower",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_watchtower",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Higher Perches",
+    "Beacon Fires",
+    "Eyes on the Horizon"
+   ],
+   "text": "Upgrade lookout perches {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade lookout perch {n}x"
+  },
+  {
+   "id": "upgrade_academy",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_academy",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "gold": 1.0
+   },
+   "titles": [
+    "Ink and Feathers",
+    "Scholars' Roost",
+    "The Great Library"
+   ],
+   "text": "Upgrade the owl academy {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade owl academy {n}x"
+  },
+  {
+   "id": "upgrade_tavern",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_tavern",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "Worms on the House",
+    "Singing Rafters",
+    "A Hero's Welcome"
+   ],
+   "text": "Upgrade the worm tavern {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade worm tavern {n}x"
+  },
+  {
+   "id": "upgrade_market",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_market",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    5,
+    8
+   ],
+   "res": {
+    "gold": 1.0
+   },
+   "titles": [
+    "Stalls and Awnings",
+    "Trade Winds",
+    "The Grand Bazaar"
+   ],
+   "text": "Upgrade the egg market {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade egg market {n}x"
+  },
+  {
+   "id": "upgrade_wall",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_wall",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    4,
+    8
+   ],
+   "res": {
+    "stone": 1.0
+   },
+   "titles": [
+    "Mortar and Might",
+    "The Long Fence",
+    "Battlements"
+   ],
+   "text": "Upgrade picket fence segments {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade picket fence {n}x"
+  },
+  {
+   "id": "upgrade_siege_workshop",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_siege_workshop",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    6,
+    8
+   ],
+   "res": {
+    "wood": 0.6,
+    "stone": 0.6
+   },
+   "titles": [
+    "Gears and Cranes",
+    "Barn Floor",
+    "Engineers' Pride"
+   ],
+   "text": "Upgrade the contraption barn {n} times.",
+   "scale": 0.3,
+   "label": "Upgrade contraption barn {n}x"
+  },
+  {
+   "id": "upgrade_town_hall",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_town_hall",
+    "delta": true
+   },
+   "base": 2,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "A Grander Coop",
+    "Hail the Coop",
+    "Crown of the Farm"
+   ],
+   "text": "Raise the Grand Coop {n} time(s).",
+   "scale": 0.0,
+   "label": "Upgrade Grand Coop {n}x"
+  },
+  {
+   "id": "upgrade_any",
+   "step": {
+    "kind": "counter",
+    "key": "upgraded_total",
+    "delta": true
+   },
+   "base": 3,
+   "value": 80,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.6,
+    "wood": 0.6
+   },
+   "titles": [
+    "Never Idle Builders",
+    "Hammer Time",
+    "A Farm Under Scaffolds"
+   ],
+   "text": "Finish {n} building upgrades of any kind.",
+   "scale": 0.5,
+   "label": "Finish {n} upgrades"
+  },
+  {
+   "id": "gather",
+   "step": {
+    "kind": "gathered"
+   },
+   "base": 300,
+   "value": 60,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.4,
+    "wood": 0.4,
+    "stone": 0.2
+   },
+   "titles": [
+    "Bring Home the Harvest",
+    "Full Baskets",
+    "Carts of Plenty"
+   ],
+   "text": "Bring home {n} resources from the wilds."
+  },
+  {
+   "id": "explore",
+   "step": {
+    "kind": "cellsExplored"
+   },
+   "base": 25,
+   "value": 60,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "gold": 1.0
+   },
+   "titles": [
+    "A Peek Past the Hills",
+    "Map the Wild",
+    "Charting the Unknown"
+   ],
+   "text": "Uncover {n} new tiles of the map.",
+   "scale": 0.8
+  },
+  {
+   "id": "ruins",
+   "step": {
+    "kind": "ruinExplored"
+   },
+   "base": 1,
+   "value": 110,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "gold": 0.7,
+    "ember": 0.01
+   },
+   "titles": [
+    "Dust and Doorways",
+    "Echoes in the Old Barn",
+    "Secrets of the Old Farmers"
+   ],
+   "text": "Send scouts to explore {n} old barn(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "research",
+   "step": {
+    "kind": "researchDone"
+   },
+   "base": 1,
+   "value": 120,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "gold": 1.0
+   },
+   "titles": [
+    "A Spark of Insight",
+    "Notes in the Margin",
+    "Breakthrough"
+   ],
+   "text": "Finish {n} research project(s).",
+   "scale": 0.35
+  },
+  {
+   "id": "gifts",
+   "step": {
+    "kind": "giftGiven"
+   },
+   "base": 1,
+   "value": 70,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "A Friendly Gesture",
+    "Baskets for the Barnyard",
+    "Gifts Across the Fence"
+   ],
+   "text": "Give {n} gift(s) to the animal lords nearby.",
+   "scale": 0.4
+  },
+  {
+   "id": "requests",
+   "step": {
+    "kind": "counter",
+    "key": "requestsDone",
+    "delta": true
+   },
+   "base": 1,
+   "value": 110,
+   "bands": [
+    3,
+    8
+   ],
+   "res": {
+    "food": 0.5,
+    "gold": 0.5
+   },
+   "titles": [
+    "A Neighbour's Favour",
+    "Keep Your Word",
+    "The Lords Remember"
+   ],
+   "text": "Complete {n} favour(s) for the animal lords.",
+   "scale": 0.35,
+   "label": "Complete {n} lord requests"
+  },
+  {
+   "id": "marches",
+   "step": {
+    "kind": "counter",
+    "key": "marchesReturned",
+    "delta": true
+   },
+   "base": 2,
+   "value": 70,
+   "bands": [
+    1,
+    8
+   ],
+   "res": {
+    "food": 0.6,
+    "wood": 0.6
+   },
+   "titles": [
+    "Claws on the Road",
+    "Coming Home",
+    "Carts Rolling"
+   ],
+   "text": "Bring {n} marches home safely.",
+   "scale": 0.6,
+   "label": "Return {n} marches"
+  },
+  {
+   "id": "battles",
+   "step": {
+    "kind": "counter",
+    "key": "battlesWon",
+    "delta": true
+   },
+   "base": 1,
+   "value": 100,
+   "bands": [
+    2,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Win a Scuffle",
+    "Beak Meets Boot",
+    "Victory in the Field"
+   ],
+   "text": "Win {n} battle(s) against the humans.",
+   "scale": 0.5,
+   "label": "Win {n} battles"
+  },
+  {
+   "id": "camps_t1",
+   "step": {
+    "kind": "campCleared",
+    "tier": 1
+   },
+   "base": 1,
+   "value": 170,
+   "bands": [
+    1,
+    3
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Free the Little Farm",
+    "Sweep the Ridge",
+    "Raid the Hen Pens"
+   ],
+   "text": "Clear {n} tier-1 human farm(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "camps_t2",
+   "step": {
+    "kind": "campCleared",
+    "tier": 2
+   },
+   "base": 1,
+   "value": 200,
+   "bands": [
+    2,
+    5
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Beyond the Fence",
+    "Smoke on the Hills",
+    "Barn Breakers"
+   ],
+   "text": "Clear {n} tier-2 big human farm(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "camps_t3",
+   "step": {
+    "kind": "campCleared",
+    "tier": 3
+   },
+   "base": 1,
+   "value": 230,
+   "bands": [
+    4,
+    7
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Hard Fought Ground",
+    "The Feedlot Falls",
+    "Bleeding the Feedlot Boss"
+   ],
+   "text": "Clear {n} tier-3 human feedlot(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "camps_t4",
+   "step": {
+    "kind": "campCleared",
+    "tier": 4
+   },
+   "base": 1,
+   "value": 260,
+   "bands": [
+    6,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Into the Suburbs",
+    "Fortress of Lawns",
+    "The Cul-de-Sacs"
+   ],
+   "text": "Clear {n} tier-4 human suburb(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "camps_t5",
+   "step": {
+    "kind": "campCleared",
+    "tier": 5
+   },
+   "base": 1,
+   "value": 290,
+   "bands": [
+    7,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "The Last Strongholds",
+    "Skyscraper Fall",
+    "No City Left Standing"
+   ],
+   "text": "Clear {n} tier-5 human city block(s).",
+   "scale": 0.3
+  },
+  {
+   "id": "raids",
+   "step": {
+    "kind": "counter",
+    "key": "raidsWon",
+    "delta": true
+   },
+   "base": 1,
+   "value": 160,
+   "bands": [
+    6,
+    8
+   ],
+   "res": {
+    "stone": 0.6,
+    "gold": 0.4
+   },
+   "titles": [
+    "Hold the Pickets",
+    "Raiders Repelled",
+    "Not One Step Further"
+   ],
+   "text": "Throw back {n} human raid(s) on the farm.",
+   "scale": 0.15,
+   "label": "Repel {n} raids"
+  }
+ ]
+}

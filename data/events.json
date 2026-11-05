@@ -1,0 +1,1062 @@
+{
+ "recent": 40,
+ "bands": [
+  {
+   "id": 1,
+   "name": "Coop",
+   "th": [
+    1,
+    2
+   ],
+   "value": 1.0,
+   "campTier": 1
+  },
+  {
+   "id": 2,
+   "name": "Brood",
+   "th": [
+    3,
+    4
+   ],
+   "value": 1.7,
+   "campTier": 1
+  },
+  {
+   "id": 3,
+   "name": "Flock",
+   "th": [
+    5,
+    6
+   ],
+   "value": 2.8,
+   "campTier": 2
+  },
+  {
+   "id": 4,
+   "name": "Roost",
+   "th": [
+    7,
+    9
+   ],
+   "value": 4.4,
+   "campTier": 2
+  },
+  {
+   "id": 5,
+   "name": "Barn",
+   "th": [
+    10,
+    12
+   ],
+   "value": 7.0,
+   "campTier": 3
+  },
+  {
+   "id": 6,
+   "name": "Farmstead",
+   "th": [
+    13,
+    16
+   ],
+   "value": 11.0,
+   "campTier": 3
+  },
+  {
+   "id": 7,
+   "name": "Ranch",
+   "th": [
+    17,
+    20
+   ],
+   "value": 17.0,
+   "campTier": 4
+  },
+  {
+   "id": 8,
+   "name": "Poultry Empire",
+   "th": [
+    21,
+    25
+   ],
+   "value": 26.0,
+   "campTier": 5
+  }
+ ],
+ "templates": [
+  {
+   "id": "trade_salt_peddler",
+   "kind": "trade",
+   "titles": [
+    "Grain Peddler",
+    "The Seed Cart"
+   ],
+   "text": "A travelling duck hauls sacks of seed and wants gold for them.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 1
+   },
+   "get": {
+    "food": 2.4
+   }
+  },
+  {
+   "id": "trade_timber_baron",
+   "kind": "trade",
+   "titles": [
+    "Twig Baron",
+    "A Load of Sticks"
+   ],
+   "text": "A beaver in a top hat offers bundles of sticks for gold.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 1
+   },
+   "get": {
+    "wood": 2.4
+   }
+  },
+  {
+   "id": "trade_stone_hauler",
+   "kind": "trade",
+   "titles": [
+    "Pebble Hauler",
+    "Gravel Wagons"
+   ],
+   "text": "A mole drags a wagon of polished pebbles through your lane.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 1
+   },
+   "get": {
+    "stone": 2.2
+   }
+  },
+  {
+   "id": "trade_grain_barge",
+   "kind": "trade",
+   "titles": [
+    "Duck Barge",
+    "Barges on the Creek"
+   ],
+   "text": "A duck captain has more corn than his hold can keep.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "wood": 1.2
+   },
+   "get": {
+    "food": 1.8
+   }
+  },
+  {
+   "id": "trade_wandering_smith",
+   "kind": "trade",
+   "titles": [
+    "Wandering Goat Smith",
+    "Hammer for Hire"
+   ],
+   "text": "A goat smith swaps good pebbles for twigs to rebuild his forge.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "wood": 1.2
+   },
+   "get": {
+    "stone": 1.6
+   }
+  },
+  {
+   "id": "trade_fur_trader",
+   "kind": "trade",
+   "titles": [
+    "Feather Trader",
+    "Plumes from the North"
+   ],
+   "text": "A goose trades fine feathers for food on the long road.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "food": 1.5
+   },
+   "get": {
+    "gold": 1.2
+   }
+  },
+  {
+   "id": "trade_fishmonger",
+   "kind": "trade",
+   "titles": [
+    "Frog Fishmonger",
+    "The Morning Catch"
+   ],
+   "text": "A frog sends a cart of fat grubs, hoping for twigs.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "wood": 1
+   },
+   "get": {
+    "food": 1.7
+   }
+  },
+  {
+   "id": "trade_charcoal_burner",
+   "kind": "trade",
+   "titles": [
+    "Worm Farmer",
+    "Wriggling Sacks"
+   ],
+   "text": "A worm wrangler swaps fresh worms for grain.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "food": 1.3
+   },
+   "get": {
+    "wood": 1.7
+   }
+  },
+  {
+   "id": "trade_pilgrim_donation",
+   "kind": "trade",
+   "titles": [
+    "Pilgrim Pigeons",
+    "Offerings on the Road"
+   ],
+   "text": "Pilgrim pigeons will swap trinkets for a night's supplies.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "food": 1.2
+   },
+   "get": {
+    "gold": 1.1
+   }
+  },
+  {
+   "id": "trade_mason_guild",
+   "kind": "trade",
+   "titles": [
+    "Mole Masons' Guild",
+    "Chisels and Mortar"
+   ],
+   "text": "The mole guild sells surplus blocks for golden eggs.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 1
+   },
+   "get": {
+    "stone": 2.5
+   }
+  },
+  {
+   "id": "trade_bee_keeper",
+   "kind": "trade",
+   "titles": [
+    "Bee Keeper",
+    "Honey and Wax"
+   ],
+   "text": "A bee offers honey, wax and a bit of buzz for sale.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 0.8
+   },
+   "get": {
+    "food": 1.9
+   }
+  },
+  {
+   "id": "trade_river_trader",
+   "kind": "trade",
+   "titles": [
+    "Creek Trader",
+    "Boats at the Ford"
+   ],
+   "text": "Duck boats unload goods at your ford.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "stone": 1.2
+   },
+   "get": {
+    "gold": 1.2
+   }
+  },
+  {
+   "id": "trade_mine_scrip",
+   "kind": "trade",
+   "titles": [
+    "Golden Roost Foreman",
+    "A Quiet Nest"
+   ],
+   "text": "A foreman sells golden eggs before the roost runs dry.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "wood": 1.1
+   },
+   "get": {
+    "gold": 1.2
+   }
+  },
+  {
+   "id": "trade_orchard_cart",
+   "kind": "trade",
+   "titles": [
+    "Apple Cart",
+    "Baskets of Apples"
+   ],
+   "text": "An orchard cart rolls in, heavy with fruit.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "wood": 0.9
+   },
+   "get": {
+    "food": 1.6
+   }
+  },
+  {
+   "id": "trade_bridge_toll",
+   "kind": "trade",
+   "titles": [
+    "Bridge Troll",
+    "The Toll Bargain"
+   ],
+   "text": "A toll troll offers goods in place of his toll.",
+   "bands": [
+    1,
+    8
+   ],
+   "give": {
+    "gold": 0.9
+   },
+   "get": {
+    "wood": 1.2,
+    "stone": 0.8
+   }
+  },
+  {
+   "id": "gamble_escort_run",
+   "kind": "gamble",
+   "titles": [
+    "Egg Cart to Escort",
+    "Merchants on the Road"
+   ],
+   "text": "An egg cart asks for an escort through human country.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "gold": 0.8
+   },
+   "win": {
+    "gold": 3.0,
+    "wood": 1.5
+   },
+   "chance": 55
+  },
+  {
+   "id": "gamble_treasure_map",
+   "kind": "gamble",
+   "titles": [
+    "Torn Treasure Map",
+    "A Map in a Bottle"
+   ],
+   "text": "A sailor duck swears this map leads to buried golden eggs.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "food": 0.8
+   },
+   "win": {
+    "gold": 3.4
+   },
+   "chance": 40
+  },
+  {
+   "id": "gamble_dice_game",
+   "kind": "gamble",
+   "titles": [
+    "Dice by the Fire",
+    "A Wager in the Tavern"
+   ],
+   "text": "Travellers dare your steward hen to a wager.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "gold": 0.7
+   },
+   "win": {
+    "gold": 2.4
+   },
+   "chance": 50
+  },
+  {
+   "id": "gamble_old_ruin_dig",
+   "kind": "gamble",
+   "titles": [
+    "Digging Rumours",
+    "Something Under the Barn"
+   ],
+   "text": "Villagers want to dig under an old barn.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "wood": 0.7
+   },
+   "win": {
+    "gold": 2.0,
+    "stone": 1.6
+   },
+   "chance": 50
+  },
+  {
+   "id": "gamble_horse_race",
+   "kind": "gamble",
+   "titles": [
+    "Pig Race",
+    "The Autumn Races"
+   ],
+   "text": "The lords hold pig races. Back a rider?",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "gold": 0.6
+   },
+   "win": {
+    "gold": 2.2
+   },
+   "chance": 45
+  },
+  {
+   "id": "gamble_smuggler_deal",
+   "kind": "gamble",
+   "titles": [
+    "Fox Smugglers' Offer",
+    "Baskets at Midnight"
+   ],
+   "text": "Foxes offer a cut of a very risky shipment.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "gold": 0.9
+   },
+   "win": {
+    "gold": 3.2,
+    "food": 1.4
+   },
+   "chance": 40
+  },
+  {
+   "id": "gamble_hermit_prophecy",
+   "kind": "gamble",
+   "titles": [
+    "The Old Owl's Prophecy",
+    "A Word from the Hills"
+   ],
+   "text": "An old owl forecasts a windfall, for a donation.",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "food": 0.7
+   },
+   "win": {
+    "wood": 2.2,
+    "stone": 1.6
+   },
+   "chance": 50
+  },
+  {
+   "id": "gamble_lost_herd",
+   "kind": "gamble",
+   "titles": [
+    "Lost Herd",
+    "Stray Cows"
+   ],
+   "text": "A herd of cows wandered off. Round them up?",
+   "bands": [
+    1,
+    8
+   ],
+   "lose": {
+    "wood": 0.6
+   },
+   "win": {
+    "food": 3.0
+   },
+   "chance": 60
+  },
+  {
+   "id": "buff_harvest_fair",
+   "kind": "buff",
+   "titles": [
+    "Harvest Fair",
+    "Autumn Bounty"
+   ],
+   "text": "The corn is full and the flock is in a mood to scratch.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_food",
+   "pct": 20,
+   "ticks": 2400,
+   "cost": {}
+  },
+  {
+   "id": "buff_woodcutters_feast",
+   "kind": "buff",
+   "titles": [
+    "Twig Gatherers' Feast",
+    "Beaks and Ale"
+   ],
+   "text": "A feast for the twig gatherers; they promise to peck twice as fast.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_wood",
+   "pct": 20,
+   "ticks": 2400,
+   "cost": {
+    "food": 0.8
+   }
+  },
+  {
+   "id": "buff_quarry_blessing",
+   "kind": "buff",
+   "titles": [
+    "Pebble Blessing",
+    "An Owl at the Pit"
+   ],
+   "text": "An owl blesses the pebble pit. The crews feel safer.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_stone",
+   "pct": 20,
+   "ticks": 2400,
+   "cost": {
+    "gold": 0.5
+   }
+  },
+  {
+   "id": "buff_gold_fever",
+   "kind": "buff",
+   "titles": [
+    "Golden Egg Fever",
+    "Rumours of a Big Clutch"
+   ],
+   "text": "Whispers of a golden clutch spread through the roosts.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_gold",
+   "pct": 18,
+   "ticks": 2400,
+   "cost": {
+    "food": 0.7
+   }
+  },
+  {
+   "id": "buff_clear_skies",
+   "kind": "buff",
+   "titles": [
+    "Clear Skies",
+    "A Perfect Week"
+   ],
+   "text": "Fine weather lifts every job on the farm.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_all",
+   "pct": 10,
+   "ticks": 3000,
+   "cost": {}
+  },
+  {
+   "id": "buff_market_day",
+   "kind": "buff",
+   "titles": [
+    "Market Day",
+    "Fair on the Green"
+   ],
+   "text": "A market day draws crowds and golden eggs.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_gold",
+   "pct": 15,
+   "ticks": 2400,
+   "cost": {}
+  },
+  {
+   "id": "buff_hunters_moon",
+   "kind": "buff",
+   "titles": [
+    "Harvest Moon",
+    "A Bright Night"
+   ],
+   "text": "A bright moon makes for good night foraging.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "autumn",
+   "stat": "prod_food",
+   "pct": 18,
+   "ticks": 2400,
+   "cost": {}
+  },
+  {
+   "id": "buff_spring_thaw",
+   "kind": "buff",
+   "titles": [
+    "Spring Thaw",
+    "Creeks Run Free"
+   ],
+   "text": "The thaw opens the lanes and the creeks.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "spring",
+   "stat": "gatherMult",
+   "pct": 20,
+   "ticks": 2400,
+   "cost": {}
+  },
+  {
+   "id": "buff_summer_solstice",
+   "kind": "buff",
+   "titles": [
+    "Midsummer Dust Bath",
+    "The Longest Day"
+   ],
+   "text": "The long day lifts everyone's spirits.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "summer",
+   "stat": "prod_all",
+   "pct": 10,
+   "ticks": 3000,
+   "cost": {
+    "food": 0.6
+   }
+  },
+  {
+   "id": "buff_scouts_tale",
+   "kind": "buff",
+   "titles": [
+    "Scout's Tale",
+    "Maps and Shortcuts"
+   ],
+   "text": "A scout shares shortcuts through the wilds.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "gatherMult",
+   "pct": 25,
+   "ticks": 2400,
+   "cost": {}
+  },
+  {
+   "id": "buff_healers_visit",
+   "kind": "buff",
+   "titles": [
+    "Travelling Healers",
+    "Herbs and Poultices"
+   ],
+   "text": "Healer hens offer to tend your wounded for a fee.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "healMult",
+   "pct": 40,
+   "ticks": 3000,
+   "cost": {
+    "gold": 0.6
+   }
+  },
+  {
+   "id": "buff_mill_repairs",
+   "kind": "buff",
+   "titles": [
+    "Mill Repairs",
+    "The Great Wheel"
+   ],
+   "text": "Fixing the wheel would speed every kitchen.",
+   "bands": [
+    1,
+    8
+   ],
+   "stat": "prod_food",
+   "pct": 22,
+   "ticks": 2400,
+   "cost": {
+    "wood": 1.0
+   }
+  },
+  {
+   "id": "camp_wolves",
+   "kind": "camp",
+   "titles": [
+    "Foxes at the Henhouse",
+    "Howling at Dusk"
+   ],
+   "text": "Foxes are stalking the thickets near your twig yards.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "forest"
+  },
+  {
+   "id": "camp_bandit_scouts",
+   "kind": "camp",
+   "titles": [
+    "Human Scouts",
+    "Smoke on the Ridge"
+   ],
+   "text": "Human scouts have been seen near your corn.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "farmland"
+  },
+  {
+   "id": "camp_boar_pack",
+   "kind": "camp",
+   "titles": [
+    "Scarecrow Gang",
+    "Straw in the Corn"
+   ],
+   "text": "A gang of scarecrows is trampling the corn.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "farmland"
+  },
+  {
+   "id": "camp_cutpurses",
+   "kind": "camp",
+   "titles": [
+    "Pebble Thieves",
+    "Thieves on the Pit Road"
+   ],
+   "text": "A gang of crows haunts the pebble pit road.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "quarry"
+  },
+  {
+   "id": "camp_claim_jumpers",
+   "kind": "camp",
+   "titles": [
+    "Claim Jumpers",
+    "Rival Egg Hunters"
+   ],
+   "text": "Rival egg hunters are crowding your golden claims.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "goldvein"
+  },
+  {
+   "id": "camp_rogue_riders",
+   "kind": "camp",
+   "titles": [
+    "Rogue Quad Bikes",
+    "Engines at Night"
+   ],
+   "text": "A pack of human quad bikes is raiding the outskirts.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "forest"
+  },
+  {
+   "id": "camp_ember_cult",
+   "kind": "camp",
+   "titles": [
+    "Chili Smugglers",
+    "Red Lights on the Peaks"
+   ],
+   "text": "Strangers gather near the chili patches at night.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "emberseam"
+  },
+  {
+   "id": "camp_poachers",
+   "kind": "camp",
+   "titles": [
+    "Poachers",
+    "Snares and Traps"
+   ],
+   "text": "Human poachers are hunting the woods.",
+   "bands": [
+    1,
+    8
+   ],
+   "node": "forest"
+  },
+  {
+   "id": "cost_fever",
+   "kind": "cost",
+   "titles": [
+    "Fowl Pox",
+    "A Cough Spreads"
+   ],
+   "text": "Fowl pox spreads. Healers cost eggs; waiting costs feathers.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "gold": 0.8
+   },
+   "stat": "healMult",
+   "pct": -40,
+   "ticks": 3600
+  },
+  {
+   "id": "cost_rats",
+   "kind": "cost",
+   "titles": [
+    "Rats in the Silo",
+    "Gnawing in the Dark"
+   ],
+   "text": "Rats are in the feed silo. Traps are cheap, losses are not.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "wood": 0.7
+   },
+   "stat": "prod_food",
+   "pct": -15,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_flood",
+   "kind": "cost",
+   "titles": [
+    "Rising Creek",
+    "Water at the Doors"
+   ],
+   "text": "The creek is rising. Sandbags help.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "wood": 0.9
+   },
+   "stat": "prod_all",
+   "pct": -10,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_drought",
+   "kind": "cost",
+   "titles": [
+    "Dry Weeks",
+    "Cracked Earth"
+   ],
+   "text": "The wells are low. Digging deeper costs twigs.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "summer",
+   "pay": {
+    "wood": 0.8
+   },
+   "stat": "prod_food",
+   "pct": -20,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_winter_chill",
+   "kind": "cost",
+   "titles": [
+    "Bitter Frost",
+    "The Long Chill"
+   ],
+   "text": "A hard frost grips the farm. Straw eases it.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "winter",
+   "pay": {
+    "wood": 1.0
+   },
+   "stat": "prod_all",
+   "pct": -10,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_blight",
+   "kind": "cost",
+   "titles": [
+    "Corn Blight",
+    "Black Spots on the Leaves"
+   ],
+   "text": "Blight touches the corn. A tonic can stop it.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "gold": 0.7
+   },
+   "stat": "prod_food",
+   "pct": -18,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_tax_collector",
+   "kind": "cost",
+   "titles": [
+    "Human Inspector",
+    "The Clipboard"
+   ],
+   "text": "A human inspector demands his due or he will make trouble.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "gold": 1.0
+   },
+   "stat": "prod_gold",
+   "pct": -15,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_mine_collapse",
+   "kind": "cost",
+   "titles": [
+    "Roost Tremor",
+    "Dust in the Tunnels"
+   ],
+   "text": "A tremor shook the golden roost. Props must be replaced.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "wood": 0.9,
+    "stone": 0.5
+   },
+   "stat": "prod_stone",
+   "pct": -18,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_sour_ale",
+   "kind": "cost",
+   "titles": [
+    "Sour Mash",
+    "A Bad Batch"
+   ],
+   "text": "The mash has turned and so has the mood.",
+   "bands": [
+    1,
+    8
+   ],
+   "pay": {
+    "gold": 0.5
+   },
+   "stat": "prod_all",
+   "pct": -8,
+   "ticks": 2400
+  },
+  {
+   "id": "cost_wolf_winter",
+   "kind": "cost",
+   "titles": [
+    "Hungry Winter",
+    "Foxes at the Pens"
+   ],
+   "text": "Hunger drives foxes to the pens.",
+   "bands": [
+    1,
+    8
+   ],
+   "season": "winter",
+   "pay": {
+    "food": 0.8
+   },
+   "stat": "gatherMult",
+   "pct": -20,
+   "ticks": 2400
+  }
+ ]
+}

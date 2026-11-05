@@ -1,0 +1,7 @@
+[
+  { "id": "req_deliver_wood",  "kind": "deliver",   "weight": 3, "expiresTicks": 3600, "urgent": false, "personalities": ["builder", "trader"], "data": { "res": "wood", "amount": 200 },  "reward": { "rep": 6, "resources": { "gold": 40 } } },
+  { "id": "req_deliver_food",  "kind": "deliver",   "weight": 3, "expiresTicks": 3600, "urgent": false, "data": { "res": "food", "amount": 250 },  "reward": { "rep": 6, "resources": { "stone": 60 } } },
+  { "id": "req_clear_camp",    "kind": "clearCamp", "weight": 2, "expiresTicks": 7200, "urgent": false, "personalities": ["warlike"], "data": { "tier": 1 },   "reward": { "rep": 10, "resources": { "gold": 100 } } },
+  { "id": "req_defend_village","kind": "defend",    "weight": 1, "expiresTicks": 2400, "urgent": true,  "data": { "ticks": 1800 },              "reward": { "rep": 12, "item": "common_pennant" } },
+  { "id": "req_escort",        "kind": "escort",    "weight": 1, "expiresTicks": 4800, "urgent": false, "personalities": ["trader"], "data": {},               "reward": { "rep": 8, "resources": { "gold": 80 } } }
+]

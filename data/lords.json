@@ -1,0 +1,8 @@
+[
+  {"id": "lord_hale", "name": "Baron Boarington (Boar)", "banner": "#4c8a3e", "personality": "builder", "likes": ["wood", "stone"], "dislikes": ["gold"], "regionTier": 1, "army": [{"troop": "militia", "count": 50}, {"troop": "bowman", "count": 20}], "hero": {"atk": 18, "def": 14, "hp": 200}},
+  {"id": "lady_orsa", "name": "Lady Moo-ra (Cow)", "banner": "#a8873c", "personality": "trader", "likes": ["gold", "food"], "dislikes": ["stone"], "regionTier": 2, "army": [{"troop": "militia", "count": 60}, {"troop": "bowman", "count": 30}], "hero": {"atk": 22, "def": 16, "hp": 230}},
+  {"id": "lord_varn", "name": "Lord Gallop (Horse)", "banner": "#a83c3c", "personality": "warlike", "likes": ["food", "ember"], "dislikes": ["wood"], "regionTier": 3, "army": [{"troop": "footman", "count": 70}, {"troop": "knight", "count": 25}], "hero": {"atk": 34, "def": 24, "hp": 320}},
+  {"id": "lady_ilse", "name": "Lady Hoot (Owl)", "banner": "#5b7fb0", "personality": "scholar", "likes": ["gold", "ember"], "dislikes": ["food"], "regionTier": 4, "army": [{"troop": "bowman", "count": 70}, {"troop": "marksman", "count": 40}], "hero": {"atk": 40, "def": 26, "hp": 360}},
+  {"id": "lord_thorn", "name": "Lord Ramsey (Ram)", "banner": "#6f5a8c", "personality": "warlike", "likes": ["wood", "food"], "dislikes": ["gold"], "regionTier": 5, "army": [{"troop": "footman", "count": 110}, {"troop": "knight", "count": 50}], "hero": {"atk": 52, "def": 36, "hp": 480}},
+  {"id": "lady_mey", "name": "Lady Mole-ly (Mole)", "banner": "#3c8a8a", "personality": "trader", "likes": ["stone", "gold"], "dislikes": ["wood"], "regionTier": 6, "army": [{"troop": "marksman", "count": 90}, {"troop": "knight", "count": 60}], "hero": {"atk": 60, "def": 40, "hp": 560}}
+]

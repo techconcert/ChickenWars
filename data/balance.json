@@ -1,0 +1,50 @@
+{
+  "gatherMult": 3.0,
+  "upkeepMult": 1.0,
+  "offlineCapTicks": 288000,
+  "raidWarningTicks": 1200,
+  "raidRange": 18,
+  "raids": { "graceDays": 12, "minTownHall": 6, "cooldownTicks": 9000, "checkInterval": 60, "launchChance": 0.2, "weakFactor": 0.8, "ticksPerCell": 100, "lootPct": 0.1, "lootMinPct": 0.03, "protectPerLevel": 0.05, "protectMax": 0.5, "wallAbsorbPct": 40, "towerDamageMult": 2, "damagedBuildingsMax": 2, "defeatCampLoss": 0.25, "peril": 3, "ambushPerTier": 0.08, "ambushMax": 0.6, "ambushStrength": 0.5, "safeAttackRatio": 1.2, "hostileThresholdMult": 0.9 },
+  "xpCurve": { "base": 100, "growth": 1.18 },
+  "difficulty": {
+    "easy":   { "banditStrength": 0.8,  "banditGrowth": 0.8,  "gather": 1.15, "warningMult": 1.5, "raidThresholdMult": 1.0 },
+    "normal": { "banditStrength": 1.0,  "banditGrowth": 1.0,  "gather": 1.0,  "warningMult": 1.0, "raidThresholdMult": 1.0 },
+    "hard":   { "banditStrength": 1.25, "banditGrowth": 1.25, "gather": 0.9,  "warningMult": 0.75, "raidThresholdMult": 0.9 }
+  },
+  "seasonMods": {
+    "spring": { "food": 1.10, "wood": 1.00, "stone": 1.00, "gold": 1.00, "gather": 1.00, "upkeep": 1.00, "banditGrowth": 1.0, "marchSpeed": 1.00 },
+    "summer": { "food": 1.20, "wood": 1.00, "stone": 1.00, "gold": 1.00, "gather": 1.05, "upkeep": 1.00, "banditGrowth": 1.0, "marchSpeed": 1.05 },
+    "autumn": { "food": 1.00, "wood": 1.10, "stone": 1.00, "gold": 1.00, "gather": 1.00, "upkeep": 1.00, "banditGrowth": 1.1, "marchSpeed": 1.00 },
+    "winter": { "food": 0.50, "wood": 0.80, "stone": 0.90, "gold": 0.90, "gather": 0.75, "upkeep": 1.30, "banditGrowth": 1.5, "marchSpeed": 0.85 }
+  },
+  "traders": { "intervalTicks": 300, "loadPerTrader": 60, "commission": 0.9 },
+  "autoScout": { "speedMult": 0.25, "maxLegs": 30, "minDistance": 3, "pickFrom": 4 },
+  "proximity": {
+    "lumber_camp": { "terrain": [1], "radius": 3, "perCell": 3, "max": 24, "label": "forest" },
+    "quarry": { "terrain": [2, 4], "radius": 3, "perCell": 4, "max": 24, "label": "rock" },
+    "mine": { "terrain": [2, 4], "radius": 3, "perCell": 3, "max": 18, "label": "rock" },
+    "farm": { "terrain": [3], "radius": 3, "perCell": 2, "max": 12, "label": "water" }
+  },
+  "productionFloor": 0.25,
+  "starvation": { "intervalTicks": 600, "desertPct": 2 },
+  "woundedShare": { "base": 0.6, "max": 0.85 },
+  "demolishRefund": 0.3,
+  "cancelRefund": { "early": 1.0, "late": 0.5, "earlyThreshold": 0.1 },
+  "territoryMaxRadius": 16,
+  "marchSlotsMax": 6,
+  "combat": { "maxRounds": 12, "defenceK": 100, "counterMult": 1.25, "counteredMult": 0.8, "siegeVsFort": 2.0, "uphillPerLevel": 0.10, "uphillCap": 0.20 },
+  "lootScaling": { "qtyPerLevel": 0.08, "minMult": 0.4, "maxMult": 5, "rarePerLevel": 0.1 },
+  "buildQueueExtra": 3,
+  "buildQueueMax": 10,
+  "trainQueueMax": 3,
+  "trainBatchMax": 200,
+  "tavernRefreshTicks": 1200,
+  "heroMax": 6,
+  "heroMaxLevel": 40,
+  "respecCostGold": 100,
+  "rallyWaitTicks": 1800,
+  "reportsKept": 20,
+  "eventIntervalDays": 10,
+  "marketCooldownTicks": 600,
+  "allies": { "giftValue": { "food": 0.5, "wood": 0.6, "stone": 0.8, "gold": 1.5, "ember": 12 }, "giftRepPerValue": 0.05, "giftDiminish": 0.6, "likeMult": 1.5, "dislikeMult": 0.5, "decayDays": 5, "decayFloor": 25, "tradeLot": 100, "tradeLikePm": 50, "tradeLimits": { "wary": 1, "friendly": 3, "allied": 5 }, "requestMinDays": 1, "requestMaxDays": 3, "requestsMax": 3, "clearCampRadius": 8, "clearCampRep": 3, "refuseStreak": 3, "refuseStreakPenalty": 10, "urgentIgnoredPenalty": 5, "seasonGift": { "friendly": 40, "allied": 90 }, "gifts": { "thScale": 0.3, "wary": { "minRep": 0, "everyDays": 14, "base": 50, "itemChance": 0.03 }, "friendly": { "minRep": 25, "everyDays": 7, "base": 90, "itemChance": 0.1 }, "allied": { "minRep": 65, "everyDays": 4, "base": 160, "itemChance": 0.2 } }, "lendPct": 50, "rallyArmyPct": 60, "rallyPlayerPct": 60, "rallyJoinRep": 2, "rallyKillRep": 5, "lordTicksPerCell": 60 }
+}
