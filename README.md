@@ -6,6 +6,28 @@ Theme guide: `docs/08-theme.md`. Reference project reviewed for models and conce
 
 No timers-for-money, no speedups, no PvP, no server. The world itself is the threat.
 
+## Screenshots
+
+| | |
+|---|---|
+| ![World map with marching flocks and the minimap](docs/screenshots/chickenwars-world.jpg) | ![The coop farm with buildings, fields and ally requests](docs/screenshots/chickenwars-farm-v2.jpg) |
+| **World map:** marches, gather nodes, human outposts, minimap | **Coop farm:** hex-placed buildings, fields, ally requests |
+| ![All building stages](docs/screenshots/chickenwars-buildings-all-stages.jpg) | ![Chicken units](docs/screenshots/chickenwars-units.jpg) |
+| **Buildings:** every one grows through visible upgrade stages | **Units:** chicks, soldiers, slingers, piglet riders |
+| ![Hero and lord portraits](docs/screenshots/chickenwars-portraits.jpg) | ![Human outposts](docs/screenshots/chickenwars-human-outposts.jpg) |
+| **Heroes and animal lords:** portraits drawn in code | **The enemy:** human farms, feedlots and outposts |
+
+## Technical achievements
+
+- **Zero art assets.** Every mesh, texture, icon, portrait and sound is generated in code: procedural 3D models in `src/gen` and `src/render`, a cel-shaded outline look, and WebAudio synthesis (marimba strikes, formant chicken clucks, a seeded pentatonic music sequencer). The repo ships no image or audio files for the game; even the PWA icon is emitted at build time.
+- **A pure, deterministic simulation.** `src/sim` imports no three.js, DOM or UI, and never touches `Math.random` or the clock. Time is `state.tick`, randomness is a seeded RNG, and ESLint enforces the boundary. The same seed plus the same command log gives the same state hash, checked by a 20,000-tick determinism test.
+- **Plain-data state and a command layer.** `GameState` is JSON-serialisable, and the UI and renderer only dispatch validated commands. That makes save, load, migrate and hash straightforward: a fresh standard-size save is about 234 kB.
+- **Procedural terrain in a Web Worker.** Hex islands with ramps, cliffs and biomes are generated from a seed in under 1 s even at radius 60, then meshed in chunks with LOD. A hashed logic layer is tested for connectivity and ramp slope across seeds.
+- **Fast at endgame scale.** With 100 marches, 68 camps and 4,400 troops, a sim tick averages 0.35 ms (budget 2 ms), measured with `npm run bench`.
+- **Data-driven content.** Buildings, troops, heroes, quests, events and balance numbers live in `data/*.json`, validated by zod schemas. A balance bot plays the economy to check pacing.
+- **Offline and installable.** A hand-written service worker precaches the build, so the game runs fully offline as a PWA. There are no network calls at runtime.
+- **Big but tested.** About 26,000 lines of TypeScript across 45 test suites, plus accessibility options (reduced motion, colour-blind markers, UI scaling).
+
 ## Start here
 
 | If you are... | Read |
